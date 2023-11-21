@@ -1,0 +1,13 @@
+.chart-container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .chart-container h1 {
+    color: white; /* Màu chữ của tiêu đề */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Thêm các CSS khác nếu cần */
+  

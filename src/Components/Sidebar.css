@@ -1,0 +1,130 @@
+:root {
+    --bar-margin: 40px;
+}
+
+.sidebar {
+    width: auto;
+    background-color: #2d4362;
+}
+
+.logo {
+    background-image: url('../Components/Assets/logo.png');
+    background-size: contain;
+    background-position-y: 14px;
+    background-repeat: no-repeat;
+    background-color: #ECF0F1;
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px #202f44;
+}
+
+.sidebar .logo {
+    align-self:self-start;
+    margin: 40px;
+}
+
+.sidebar .items {
+    margin-top: 60px;
+    color: #d7dee0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .item {
+    display: flex;
+    padding: 20px 0px;
+    position: relative;
+    /* align-self: center; */
+    padding-left: var(--bar-margin);
+    padding-right: 12px;
+}
+
+/* ------------------------------------------------ */
+
+.item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 5px; /* Đặt chiều rộng của thanh dọc */
+    background-color: transparent; /* Mặc định màu nền là trong suốt */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.item:hover::before {
+    background-color: #fff; /* Màu nền của thanh dọc khi hover */
+}
+
+.item:hover{
+    cursor: pointer;
+    background-color: #3c577c;
+}
+
+
+.item:hover .icon {
+    filter: invert(100%);
+
+}
+
+.item:hover .item-name {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* -------------------------------------------- */
+
+
+.item.active::before {
+    background-color: #fff; /* Màu nền của thanh dọc khi hover */
+}
+
+.item.active {
+    cursor: pointer;
+    background-color: #3c577c;
+}
+
+.item.active .icon {
+    filter: invert(100%);
+}
+
+.item.active .item-name {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* -------------------------------------------- */
+
+
+.sidebar .icon {
+    filter: invert(60%);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 24px;
+}
+
+.sidebar .home-icon {
+    background-image: url(./Assets/home_icon.png);
+}
+
+.sidebar .account-icon {
+    background-image: url(./Assets/many_users_icon.png);
+}
+
+.sidebar .order-icon {
+    background-image: url(./Assets/order_icon.png);
+}
+
+/* staff */
+.sidebar .confirm-order-icon {
+    background-image: url(./Assets/order_icon.png);
+}
+
+.sidebar .create-order-icon {
+    background-image: url(./Assets/create-order_icon.png);
+}
+

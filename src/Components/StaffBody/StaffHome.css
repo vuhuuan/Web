@@ -1,0 +1,16 @@
+.home-container h1{
+    color: white;
+    margin: 32px;
+    position: relative;
+}
+
+.home-container .home-image {
+    background-image: url('../Assets/staff-home.jpg');
+    height: 400px;
+    width: 80%;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}

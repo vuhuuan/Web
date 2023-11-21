@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+    background-color: #eee;
+    height: 50px;
+    padding: 8px;
+    background-color: #ECF0F1;
+}
+
+.leader-info {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.leader-info .leader-name {
+    padding: 20px;
+}
+
+.leader-info .leader-avatar {
+    background-image: url('../Components/Assets/user_icon.png');
+    background-size: contain;
+
+    height: 80%;
+    width: 40px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}

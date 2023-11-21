@@ -1,0 +1,15 @@
+.leader-home-container h1{
+    color: white;
+    margin: 32px;
+    position: relative;
+}
+
+.leader-home-container .leader-home-image {
+    background-image: url('../Assets/leader-home.jpg');
+    height: 460px;
+    width: 460px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 40px; bottom: 20px;
+}
