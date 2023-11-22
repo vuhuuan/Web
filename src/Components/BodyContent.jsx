@@ -9,12 +9,14 @@ import StaffHome from './StaffBody/StaffHome.jsx';
 import StaffConfirmOrder from './StaffBody/StaffConfirmOrder.jsx';
 import StaffCreateOrder from './StaffBody/StaffCreateOrder.jsx';
 
+import CustomerHome from './CustomerBody/CustomerHome.jsx';
+import CustomerCheckOrder from './CustomerBody/CustomerCheckOrder.jsx';
+
 const BodyContent = ({ selectedItem }) => {
     const [confirmedOrders, setConfirmedOrders] = useState([]);
     const [pendingOrders, setPendingOrders] = useState([
       { id: 'TP123', source: 'Đại từ', destination: 'Cầu giấy', pickupPoint: 'Điểm tập kết A' },
-      { id: 'TP124', source: 'Đại từ', destination: 'Cầu giấy', pickupPoint: 'Điểm tập kết A' },
-      { id: 'TP125', source: 'Đại từ', destination: 'Cầu giấy', pickupPoint: 'Điểm tập kết A' },
+      { id: 'TP124', source: 'Hùng Sơn', destination: 'Hai bà Trưng', pickupPoint: 'Điểm tập kết A' },
     
     ]);
   
@@ -40,6 +42,11 @@ const BodyContent = ({ selectedItem }) => {
             {selectedItem === 'staffHome' && <StaffHome />}
             {selectedItem === 'confirmOrder' && <StaffConfirmOrder onOrderConfirm={handleOrderConfirm} pendingOrders={pendingOrders} onPendingOrdersUpdate={handlePendingOrdersUpdate} />}
             {selectedItem === 'createOrder' && <StaffCreateOrder confirmedOrders={confirmedOrders} />}
+
+{/* customer */}
+            {selectedItem === 'customerHome' && <CustomerHome />}     
+            {selectedItem === 'checkOrder' && <CustomerCheckOrder />}     
+
         </main>
     );
 };

@@ -7,7 +7,7 @@ import { useState } from 'react';
 import BodyContent from '../Components/BodyContent';
 
 const StaffPage = () => {
-    const [selectedItem, setSelectedItem] = useState('home');
+    const [selectedItem, setSelectedItem] = useState('staffHome');
 
     const handleSidebarItemClick = (item) => {
         setSelectedItem(item);
@@ -20,7 +20,7 @@ const StaffPage = () => {
       ];
 
     return (
-        <div className="leader-page">
+        <div className="staff-page">
             <div className="sidebar">
                 <Sidebar items={staffItems} selectedItem={selectedItem} onSidebarItemClick={handleSidebarItemClick} />
             </div>

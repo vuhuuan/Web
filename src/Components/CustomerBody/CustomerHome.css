@@ -1,0 +1,35 @@
+.home-container h1{
+    color: white;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-container .slideshow {
+    display: flex;
+    margin: auto;
+    align-content: center;
+    position: relative;
+    justify-content: center;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.slideshow .mainImg {
+    width: 60%;
+    height: 400px;
+}
+
+.slideshow .actions {
+    width: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.slideshow .actions button {
+    height: 120px;
+    opacity: 0.6;
+}

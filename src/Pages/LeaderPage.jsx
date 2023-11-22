@@ -7,7 +7,7 @@ import './LeaderPage.css';
 import { useState } from 'react';
 
 const LeaderPage = () => {
-    const [selectedItem, setSelectedItem] = useState('home');
+    const [selectedItem, setSelectedItem] = useState('leaderHome');
 
     const handleSidebarItemClick = (item) => {
         setSelectedItem(item);

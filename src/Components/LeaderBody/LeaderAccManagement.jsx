@@ -5,7 +5,7 @@ const LeaderAccManagement = () => {
     const [showAddModal, setShowAddModal] = useState(false);
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const [users, setUsers] = useState([
-        { username: 'user1', password: 'pass1', fullname: 'Full Name 1', role: 'Employee', creationDate: '2023-01-01' },
+        { username: 'user1', password: 'pass1', fullname: 'Full Name 1', role: 'Staff', creationDate: '2023-01-01' },
         // Thêm dữ liệu người dùng mẫu ở đây
     ]);
 
